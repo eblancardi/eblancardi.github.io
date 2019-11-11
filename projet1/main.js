@@ -33,7 +33,7 @@ document.getElementById("start-button").onclick = function () {
 function draw() {
   ctx.clearRect(0, 0, W, H);
 
-  if (frames % 30 === 0) {
+  if (frames % 90 === 0) {
     var chiffre = Math.random() * 1000;
     var unScoop = new Scoop("./Images/scoop1.png", chiffre, 0);
     arrayscoop.push(unScoop);
@@ -45,8 +45,7 @@ function draw() {
 
     // pour chacune detecte si collision
     if (oneScoop.hits(cup)) {
-      console.log('miam');
-
+  
       // on enleve la boule du arrayscoop
       arrayscoop.splice(index, 1);
 
@@ -89,11 +88,7 @@ function clearCanvas() {
 
 // Obstacles avec la cup
 
-
-
 arrayscoop.forEach(function (scoop) {
   scoop.y += 5;
   scoop.draw();
 });
-
-console.log('coucou');

@@ -1,7 +1,12 @@
 *, :before, :after {box-sizing:border-box;}
 
+* {
+  font-family:'Pacifico', cursive;
+}
+
 canvas {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
+  max-height:100vh;
 }
 
 body {
@@ -9,15 +14,17 @@ body {
   text-align : center;
   font-size: 25px;
   color : rgb(239, 93, 153);
-  font-family: 'Fontdiner Swanky', cursive;  
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,0.3925945378151261) 66%, rgba(148,187,233,1) 100%);
 }
 
 body {display:flex; min-height:100vh;}
 body >div {flex:1;}
 
 .game-intro {
+  padding-right: 2em;
   display:flex; flex-direction:column;
-  justify-content:center; align-items:center;
+  align-items:center;
 }
 
 .logo-img {
@@ -25,11 +32,11 @@ body >div {flex:1;}
 }
 
 .arrows-img {
-  width: 150px;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 body button {
-  font-family: 'Fontdiner Swanky', cursive;
   font-size: 30px;
   background-color: rgb(239, 93, 153);
   color : white;
@@ -41,7 +48,7 @@ body button {
 
 #game-board {
   padding: 20px 0px;
-  /* background-image: url(./Images/57.jpg);*/ 
+  align-items: center;
 }
 #game-board {position:relative;}
 
