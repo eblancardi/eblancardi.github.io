@@ -14,8 +14,8 @@ body {
   text-align : center;
   font-size: 25px;
   color : rgb(239, 93, 153);
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,0.3925945378151261) 66%, rgba(148,187,233,1) 100%);
+  background: rgb(182,238,174);
+background: radial-gradient(circle, rgba(182,238,174,0.3925945378151261) 66%, rgba(233,148,201,1) 100%);
 }
 
 body {display:flex; min-height:100vh;}

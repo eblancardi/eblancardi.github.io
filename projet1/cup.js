@@ -13,7 +13,7 @@ class Cup {
       this.w = 100;
       this.h = this.w / imgRatio;
       
-      this.y = H - this.h - 100;
+      this.y = H - this.h;
     }
     img.src = "./Images/cup.png";
   };

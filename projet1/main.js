@@ -8,6 +8,8 @@ ctx.font = '18px serif';
 // Variables
 
 var score = 0;
+//
+var Boule = "./Images/scoop2.png"
 
 /*var gameover;
 var yumyum;
@@ -17,7 +19,7 @@ var y2 = 0;
 var y3 = 0;*/
 var frames = 0;
 cup = new Cup();
-scoop1 = new Scoop("./Images/scoop1.png", 50, 50);
+scoop1 = new Scoop(Boule, 50, 50);
 // scoop2 = new Scoop ("./Images/scoop2.png", 100, 100);
 // scoop3 = new Scoop ("./Images/scoop3.png", 150, 150);
 var arrayscoop = [];
@@ -35,7 +37,7 @@ function draw() {
 
   if (frames % 90 === 0) {
     var chiffre = Math.random() * 1000;
-    var unScoop = new Scoop("./Images/scoop1.png", chiffre, 0);
+    var unScoop = new Scoop(Boule, chiffre, 0);
     arrayscoop.push(unScoop);
   };
 
@@ -51,6 +53,30 @@ function draw() {
 
       score++;
       cup.changeImg(score);
+      
+      switch (score) {
+        case 1:
+          Boule="./Images/scoop1.png"
+          // executed code when the expression === value2
+          break;
+        case 2:
+          Boule="./Images/scoop3.png" 
+        // executed code when the expression === value3
+          break;
+        case 3:
+            // executed code when the expression === value3
+            Boule="./Images/cake.png" 
+        break;
+        case 4:
+          // executed code when the expression === value3
+          // saisir code gagné !!!!
+        break;
+      default:
+          // executed code when none of the values match the expression
+      }
+
+
+      
     }
   });
 
