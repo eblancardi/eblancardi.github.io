@@ -49,7 +49,7 @@ function draw() {
     if (oneScoop.hits(cup)) {
   
       // on enleve la boule du arrayscoop
-      arrayscoop.splice(index, 1);
+      arrayscoop.splice(index, arrayscoop.length);
 
       score++;
       cup.changeImg(score);
@@ -67,16 +67,11 @@ function draw() {
             // executed code when the expression === value3
             Boule="./Images/cake.png" 
         break;
-        case 4:
-          // executed code when the expression === value3
-          // saisir code gagné !!!!
-        break;
       default:
-          // executed code when none of the values match the expression
+          // executed code when none of the values match the expression*/ 
+         // alert("bravo")
+          window.location.href='http://giphygifs.s3.amazonaws.com/media/OU7qx8L1cKtYk/giphy.gif'
       }
-
-
-      
     }
   });
 

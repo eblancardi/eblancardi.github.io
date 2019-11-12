@@ -24,11 +24,11 @@ class Cup {
   };
 
   moveLeft() {
-    this.x += -10;
+    this.x += -20;
   };
 
   moveRight() {
-    this.x += 10;
+    this.x += 20;
   };
 
   /* crée une méthode qui dit quand je colissionne je remplace l image */
